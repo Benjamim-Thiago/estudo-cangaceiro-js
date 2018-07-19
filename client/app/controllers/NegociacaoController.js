@@ -8,8 +8,7 @@ class NegociacaoController {
 
     adiciona(event) {
         event.preventDefault();
-        let convert = new DataConverter();
-        let data = convert.paraData(this._inputData.value)
+        let data = DataConverter.paraData(this._inputData.value)
 
         let negociacao = new Negociacao(
             data,
@@ -17,6 +16,6 @@ class NegociacaoController {
             this._inputValor.value
         );
         
-        console.log(convert.paraTexto(negociacao.data));
+        console.log(DataConverter.paraTexto(negociacao.data));
     }
 }
