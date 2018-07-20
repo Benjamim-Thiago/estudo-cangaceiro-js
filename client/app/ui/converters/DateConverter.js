@@ -1,4 +1,4 @@
-class DataConverter {
+class DateConverter {
 
     constructor() {
         throw new Error('Essa classe não pode ser instanciada.');
